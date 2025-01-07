@@ -1,0 +1,13 @@
+version: "3"
+
+tasks:
+  lintb:
+    dir: backend
+    cmds:
+      - uv run ruff format .
+      - uv run ruff check . --fix
+
+  lintf:
+    dir: frontend
+    cmds:
+      - npm run lint -- --fix
