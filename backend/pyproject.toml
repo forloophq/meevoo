@@ -8,3 +8,8 @@ dependencies = [
     "django-ninja>=1.3.0",
     "django>=5.1.4",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.6",
+]
